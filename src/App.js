@@ -28,7 +28,7 @@ function App() {
   const [productsSelected, setProductsSelected] = useState([]);
 
   useEffect(() => {
-    
+    //es un nuevo cambio en develop
     const dataProducts = JSON.parse(localStorage.getItem("PRODUCTS_SELECTED")) || [];
     if (dataProducts.length < 1) {
       localStorage.setItem("PRODUCTS_SELECTED", JSON.stringify(productsList));
